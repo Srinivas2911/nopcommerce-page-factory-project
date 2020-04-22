@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 530.934 s <<< FAILURE! - in TestSuite
+verifyUserFailedTestToNavigateToDesktopPage(com.demo.nopcommerce.testsuite.ComputerTest)  Time elapsed: 54.368 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Desk] but found [Desktops]
+	at com.demo.nopcommerce.testsuite.ComputerTest.verifyUserFailedTestToNavigateToDesktopPage(ComputerTest.java:61)
+
+verifyUserFailedLoginWithWrongDetails(com.demo.nopcommerce.testsuite.LoginTest)  Time elapsed: 4.011 s  <<< FAILURE!
+java.lang.AssertionError: expected [Wrong email] but found [About login / registration]
+	at com.demo.nopcommerce.testsuite.LoginTest.verifyUserFailedLoginWithWrongDetails(LoginTest.java:78)
+
+verifyThatNewUserFailedTestToRegister(com.demo.nopcommerce.testsuite.RegistrationTest)  Time elapsed: 59.681 s  <<< FAILURE!
+java.lang.AssertionError: expected [Your registration] but found [Your registration completed]
+	at com.demo.nopcommerce.testsuite.RegistrationTest.verifyThatNewUserFailedTestToRegister(RegistrationTest.java:103)
+

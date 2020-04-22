@@ -1,0 +1,14 @@
+com\demo\nopcommerce\excelutility\ExcelRead.class
+com\demo\nopcommerce\pages\DesktopPage.class
+com\demo\nopcommerce\pages\HomePage.class
+com\demo\nopcommerce\pages\LoginErrorMessagePage.class
+com\demo\nopcommerce\loadproperty\LoadProperty.class
+com\demo\nopcommerce\pages\RegisterPage.class
+com\demo\nopcommerce\browserselector\BrowserSelector.class
+com\demo\nopcommerce\pages\RegistrationCompletePage.class
+com\demo\nopcommerce\pages\WelcomeStorePage.class
+com\demo\nopcommerce\pages\LoginPage.class
+com\demo\nopcommerce\basepage\BasePage.class
+com\demo\nopcommerce\excelutility\ExcelUtility.class
+com\demo\nopcommerce\utility\Utility.class
+com\demo\nopcommerce\pages\ComputersPage.class

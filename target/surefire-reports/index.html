@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Surefire_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Surefire_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Surefire_suite">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Surefire_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Surefire_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Surefire_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Surefire_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 3 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.RegistrationTest" hash-for-method="verifyThatNewUserFailedTestToRegister">verifyThatNewUserFailedTestToRegister</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.LoginTest" hash-for-method="verifyUserFailedLoginWithWrongDetails">verifyUserFailedLoginWithWrongDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.ComputerTest" hash-for-method="verifyUserFailedTestToNavigateToDesktopPage">verifyUserFailedTestToNavigateToDesktopPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.RegistrationTest" hash-for-method="verifyThatNewUserIsAbleToRegisterSuccessfully">verifyThatNewUserIsAbleToRegisterSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.RegistrationTest" hash-for-method="verifyThatUserIsAbleToNavigateToRegisterPage">verifyThatUserIsAbleToNavigateToRegisterPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.ComputerTest" hash-for-method="verifyUserAbleToNavigateToComputersPage">verifyUserAbleToNavigateToComputersPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.LoginTest" hash-for-method="verifyUserIsAbleToLoginSuccessfully">verifyUserIsAbleToLoginSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.ComputerTest" hash-for-method="verifyUserIsAbleToNavigateToDesktopPageViaComputersPage">verifyUserIsAbleToNavigateToDesktopPageViaComputersPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.LoginTest" hash-for-method="verifyUserIsAbleToNavigatetoLoginPage">verifyUserIsAbleToNavigatetoLoginPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.LoginTest" hash-for-method="verifyUserIsNotAbleToLoginWithInvalidCredentials">verifyUserIsNotAbleToLoginWithInvalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.RegistrationTest" hash-for-method="verifyUserisNotBeAbleToRegisterWithInvalidCredentials">verifyUserisNotBeAbleToRegisterWithInvalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.demo.nopcommerce.testsuite.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserFailedLoginWithWrongDetails">
+                  </a> <!-- verifyUserFailedLoginWithWrongDetails -->
+                  <span class="method-name">verifyUserFailedLoginWithWrongDetails</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Wrong email] but found [About login / registration]
+	at com.demo.nopcommerce.testsuite.LoginTest.verifyUserFailedLoginWithWrongDetails(LoginTest.java:78)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.demo.nopcommerce.testsuite.ComputerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserFailedTestToNavigateToDesktopPage">
+                  </a> <!-- verifyUserFailedTestToNavigateToDesktopPage -->
+                  <span class="method-name">verifyUserFailedTestToNavigateToDesktopPage</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Desk] but found [Desktops]
+	at com.demo.nopcommerce.testsuite.ComputerTest.verifyUserFailedTestToNavigateToDesktopPage(ComputerTest.java:61)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.demo.nopcommerce.testsuite.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatNewUserFailedTestToRegister">
+                  </a> <!-- verifyThatNewUserFailedTestToRegister -->
+                  <span class="method-name">verifyThatNewUserFailedTestToRegister</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Your registration] but found [Your registration completed]
+	at com.demo.nopcommerce.testsuite.RegistrationTest.verifyThatNewUserFailedTestToRegister(RegistrationTest.java:103)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demo.nopcommerce.testsuite.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsAbleToLoginSuccessfully">
+                  </a> <!-- verifyUserIsAbleToLoginSuccessfully -->
+                  <span class="method-name">verifyUserIsAbleToLoginSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsAbleToNavigatetoLoginPage">
+                  </a> <!-- verifyUserIsAbleToNavigatetoLoginPage -->
+                  <span class="method-name">verifyUserIsAbleToNavigatetoLoginPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsNotAbleToLoginWithInvalidCredentials">
+                  </a> <!-- verifyUserIsNotAbleToLoginWithInvalidCredentials -->
+                  <span class="method-name">verifyUserIsNotAbleToLoginWithInvalidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demo.nopcommerce.testsuite.ComputerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserAbleToNavigateToComputersPage">
+                  </a> <!-- verifyUserAbleToNavigateToComputersPage -->
+                  <span class="method-name">verifyUserAbleToNavigateToComputersPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsAbleToNavigateToDesktopPageViaComputersPage">
+                  </a> <!-- verifyUserIsAbleToNavigateToDesktopPageViaComputersPage -->
+                  <span class="method-name">verifyUserIsAbleToNavigateToDesktopPageViaComputersPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demo.nopcommerce.testsuite.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatNewUserIsAbleToRegisterSuccessfully">
+                  </a> <!-- verifyThatNewUserIsAbleToRegisterSuccessfully -->
+                  <span class="method-name">verifyThatNewUserIsAbleToRegisterSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatUserIsAbleToNavigateToRegisterPage">
+                  </a> <!-- verifyThatUserIsAbleToNavigateToRegisterPage -->
+                  <span class="method-name">verifyThatUserIsAbleToNavigateToRegisterPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserisNotBeAbleToRegisterWithInvalidCredentials">
+                  </a> <!-- verifyUserisNotBeAbleToRegisterWithInvalidCredentials -->
+                  <span class="method-name">verifyUserisNotBeAbleToRegisterWithInvalidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.demo.nopcommerce.resources.testdata.TestData&quot;/&gt;
+      &lt;class name=&quot;com.demo.nopcommerce.testbase.TestBase&quot;/&gt;
+      &lt;class name=&quot;com.demo.nopcommerce.testsuite.ComputerTest&quot;/&gt;
+      &lt;class name=&quot;com.demo.nopcommerce.testsuite.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.demo.nopcommerce.testsuite.RegistrationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyThatNewUserFailedTestToRegister</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyThatNewUserIsAbleToRegisterSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserFailedLoginWithWrongDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserFailedTestToNavigateToDesktopPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserIsAbleToLoginSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserIsAbleToNavigateToDesktopPageViaComputersPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserIsNotAbleToLoginWithInvalidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserisNotBeAbleToRegisterWithInvalidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyThatNewUserIsAbleToRegisterSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyThatUserIsAbleToNavigateToRegisterPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserAbleToNavigateToComputersPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserFailedTestToNavigateToDesktopPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserIsAbleToLoginSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserIsAbleToNavigateToDesktopPageViaComputersPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserIsAbleToNavigatetoLoginPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserIsNotAbleToLoginWithInvalidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserisNotBeAbleToRegisterWithInvalidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyThatUserIsAbleToNavigateToRegisterPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserAbleToNavigateToComputersPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserIsAbleToNavigatetoLoginPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyThatNewUserIsAbleToRegisterSuccessfully')
+data.setCell(0, 2, 'com.demo.nopcommerce.testsuite.RegistrationTest')
+data.setCell(0, 3, 89470);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyThatNewUserFailedTestToRegister')
+data.setCell(1, 2, 'com.demo.nopcommerce.testsuite.RegistrationTest')
+data.setCell(1, 3, 59685);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyUserIsAbleToNavigateToDesktopPageViaComputersPage')
+data.setCell(2, 2, 'com.demo.nopcommerce.testsuite.ComputerTest')
+data.setCell(2, 3, 55337);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyUserIsAbleToLoginSuccessfully')
+data.setCell(3, 2, 'com.demo.nopcommerce.testsuite.LoginTest')
+data.setCell(3, 3, 54744);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyUserFailedTestToNavigateToDesktopPage')
+data.setCell(4, 2, 'com.demo.nopcommerce.testsuite.ComputerTest')
+data.setCell(4, 3, 54364);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyUserisNotBeAbleToRegisterWithInvalidCredentials')
+data.setCell(5, 2, 'com.demo.nopcommerce.testsuite.RegistrationTest')
+data.setCell(5, 3, 6291);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyUserFailedLoginWithWrongDetails')
+data.setCell(6, 2, 'com.demo.nopcommerce.testsuite.LoginTest')
+data.setCell(6, 3, 4016);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyUserIsNotAbleToLoginWithInvalidCredentials')
+data.setCell(7, 2, 'com.demo.nopcommerce.testsuite.LoginTest')
+data.setCell(7, 3, 3830);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyUserAbleToNavigateToComputersPage')
+data.setCell(8, 2, 'com.demo.nopcommerce.testsuite.ComputerTest')
+data.setCell(8, 3, 2410);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyUserIsAbleToNavigatetoLoginPage')
+data.setCell(9, 2, 'com.demo.nopcommerce.testsuite.LoginTest')
+data.setCell(9, 3, 1678);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyThatUserIsAbleToNavigateToRegisterPage')
+data.setCell(10, 2, 'com.demo.nopcommerce.testsuite.RegistrationTest')
+data.setCell(10, 3, 1650);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserIsAbleToLoginSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on Login Link : [[ChromeDriver: chrome on WINDOWS (ae5c580a6281c72d0a4882dd8aa4be5e)] -> link text: Log in]<br></span>
+                <span class="reporter-method-output">Entering Email Id : Roger123@gmail.com On Email Field [[ChromeDriver: chrome on WINDOWS (ae5c580a6281c72d0a4882dd8aa4be5e)] -> id: Email]<br></span>
+                <span class="reporter-method-output">Entering Password : Roger1980 On Password Field [[ChromeDriver: chrome on WINDOWS (ae5c580a6281c72d0a4882dd8aa4be5e)] -> xpath: //input[@name='Password']]<br></span>
+                <span class="reporter-method-output"> Clicking on Login Button : [[ChromeDriver: chrome on WINDOWS (ae5c580a6281c72d0a4882dd8aa4be5e)] -> xpath: //input[@class='button-1 login-button']]<br></span>
+                <span class="reporter-method-output">Getting Welcome Store Text[[ChromeDriver: chrome on WINDOWS (ae5c580a6281c72d0a4882dd8aa4be5e)] -> xpath: //div[@class='topic-block-title']//h2]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserAbleToNavigateToComputersPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on Computer Link : [[ChromeDriver: chrome on WINDOWS (9c1ab20c3455bcd5b572865538faccc1)] -> xpath: //ul[@class='top-menu notmobile']//a[contains(text(),'Computers')]]<br></span>
+                <span class="reporter-method-output">Getting Computer Text : Computers [[ChromeDriver: chrome on WINDOWS (9c1ab20c3455bcd5b572865538faccc1)] -> xpath: //div[@class='page-title']//h1]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserIsNotAbleToLoginWithInvalidCredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on Login Link : [[ChromeDriver: chrome on WINDOWS (66f2ba0eb1346949e2f64ad59b9cc556)] -> link text: Log in]<br></span>
+                <span class="reporter-method-output">Entering Email Id : Roger123@gmail.com On Email Field [[ChromeDriver: chrome on WINDOWS (66f2ba0eb1346949e2f64ad59b9cc556)] -> id: Email]<br></span>
+                <span class="reporter-method-output">Entering A Wrong Password : Roger197777 On Password Field [[ChromeDriver: chrome on WINDOWS (66f2ba0eb1346949e2f64ad59b9cc556)] -> xpath: //input[@name='Password']]<br></span>
+                <span class="reporter-method-output"> Clicking on Login Button : [[ChromeDriver: chrome on WINDOWS (66f2ba0eb1346949e2f64ad59b9cc556)] -> xpath: //input[@class='button-1 login-button']]<br></span>
+                <span class="reporter-method-output"> Getting Error Message Text : [[ChromeDriver: chrome on WINDOWS (66f2ba0eb1346949e2f64ad59b9cc556)] -> xpath: //div[@class='message-error validation-summary-errors']]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserisNotBeAbleToRegisterWithInvalidCredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on Register Link : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> link text: Register]<br></span>
+                <span class="reporter-method-output">Clicking on Male Gender Radio Button  : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> id: gender-male]<br></span>
+                <span class="reporter-method-output">Entering First Name : Roger On First Name Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //input[@name='FirstName']]<br></span>
+                <span class="reporter-method-output">Entering Last Name : Moore On Last Name Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //input[@name='LastName']]<br></span>
+                <span class="reporter-method-output">Selecting Day of Birth : 1 On Day of Birth Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //select[@name='DateOfBirthDay']]<br></span>
+                <span class="reporter-method-output">Selecting Month of Birth : January On Month of Birth Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //select[@name='DateOfBirthMonth']]<br></span>
+                <span class="reporter-method-output">Selecting Year of Birth : 1980 On Year of Birth Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //select[@name='DateOfBirthYear']]<br></span>
+                <span class="reporter-method-output">Entering Email ID : RogerCdfe@gmail.com On Email Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //input[@name='Email']]<br></span>
+                <span class="reporter-method-output">Entering Company Name : Roger Moore International On Company Name Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //input[@name='Company']]<br></span>
+                <span class="reporter-method-output">Entering Password : RogerglQ On Password Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //input[@name='Password']]<br></span>
+                <span class="reporter-method-output">Providing Wrong Confirm Password : Roger77777 On Confirm Password Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //input[@name='ConfirmPassword']]<br></span>
+                <span class="reporter-method-output">Clicking on Register Button  : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //input[@name='register-button']]<br></span>
+                <span class="reporter-method-output">Verifying Registration Error Message : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //span[@id='ConfirmPassword-error']]<br></span>
+                <span class="reporter-method-output">Getting Registration Error Message : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //span[@id='ConfirmPassword-error']]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyThatUserIsAbleToNavigateToRegisterPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on Register Link : [[ChromeDriver: chrome on WINDOWS (ff83f14f2d4d00ac1ec51ee273d8b42d)] -> link text: Register]<br></span>
+                <span class="reporter-method-output">Verifying Register Text : [[ChromeDriver: chrome on WINDOWS (ff83f14f2d4d00ac1ec51ee273d8b42d)] -> xpath: //h1[contains(text(),'Register')]]<br></span>
+                <span class="reporter-method-output">Getting Register Text : [[ChromeDriver: chrome on WINDOWS (ff83f14f2d4d00ac1ec51ee273d8b42d)] -> xpath: //h1[contains(text(),'Register')]]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserIsAbleToNavigateToDesktopPageViaComputersPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on Computer Link : [[ChromeDriver: chrome on WINDOWS (0c117c852ad12ef3aeb2b2b6c138bebc)] -> xpath: //ul[@class='top-menu notmobile']//a[contains(text(),'Computers')]]<br></span>
+                <span class="reporter-method-output">Clicking on Desktop Link : [[ChromeDriver: chrome on WINDOWS (0c117c852ad12ef3aeb2b2b6c138bebc)] -> xpath: //h2[@class='title']//a[contains(text(),'Desktops')]]<br></span>
+                <span class="reporter-method-output">Getting Desktop Text : [[ChromeDriver: chrome on WINDOWS (0c117c852ad12ef3aeb2b2b6c138bebc)] -> xpath: /html/body/div[6]/div[3]/div[2]/div[2]/div/div[1]/h1]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserIsAbleToNavigatetoLoginPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on Login Link : [[ChromeDriver: chrome on WINDOWS (5f6fa64bf6505d37e5d570889457342a)] -> link text: Log in]<br></span>
+                <span class="reporter-method-output"> Getting Login Welcome Text Message : [[ChromeDriver: chrome on WINDOWS (5f6fa64bf6505d37e5d570889457342a)] -> xpath: //h1[contains(text(),'Welcome, Please Sign In!')]]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyThatNewUserIsAbleToRegisterSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on Register Link : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> link text: Register]<br></span>
+                <span class="reporter-method-output">Clicking on Male Gender Radio Button  : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> id: gender-male]<br></span>
+                <span class="reporter-method-output">Entering First Name : Roger On First Name Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //input[@name='FirstName']]<br></span>
+                <span class="reporter-method-output">Entering Last Name : Moore On Last Name Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //input[@name='LastName']]<br></span>
+                <span class="reporter-method-output">Selecting Day of Birth : 1 On Day of Birth Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //select[@name='DateOfBirthDay']]<br></span>
+                <span class="reporter-method-output">Selecting Month of Birth : January On Month of Birth Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //select[@name='DateOfBirthMonth']]<br></span>
+                <span class="reporter-method-output">Selecting Year of Birth : 1980 On Year of Birth Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //select[@name='DateOfBirthYear']]<br></span>
+                <span class="reporter-method-output">Entering Email ID : RogerlEcl@gmail.com On Email Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //input[@name='Email']]<br></span>
+                <span class="reporter-method-output">Entering Company Name : Roger Moore International On Company Name Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //input[@name='Company']]<br></span>
+                <span class="reporter-method-output">Entering Password : Roger4R4 On Password Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //input[@name='Password']]<br></span>
+                <span class="reporter-method-output">Confirming Password : Roger4R4 On Confirm Password Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //input[@name='ConfirmPassword']]<br></span>
+                <span class="reporter-method-output">Clicking on Register Button  : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //input[@name='register-button']]<br></span>
+                <span class="reporter-method-output">Getting Registration Confirmation Text[[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //div[@class='result']]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyThatNewUserFailedTestToRegister</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on Register Link : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> link text: Register]<br></span>
+                <span class="reporter-method-output">Clicking on Male Gender Radio Button  : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> id: gender-male]<br></span>
+                <span class="reporter-method-output">Entering First Name : Roger On First Name Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //input[@name='FirstName']]<br></span>
+                <span class="reporter-method-output">Entering Last Name : Moore On Last Name Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //input[@name='LastName']]<br></span>
+                <span class="reporter-method-output">Selecting Day of Birth : 1 On Day of Birth Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //select[@name='DateOfBirthDay']]<br></span>
+                <span class="reporter-method-output">Selecting Month of Birth : January On Month of Birth Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //select[@name='DateOfBirthMonth']]<br></span>
+                <span class="reporter-method-output">Selecting Year of Birth : 1980 On Year of Birth Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //select[@name='DateOfBirthYear']]<br></span>
+                <span class="reporter-method-output">Entering Email ID : Roger0d3J@gmail.com On Email Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //input[@name='Email']]<br></span>
+                <span class="reporter-method-output">Entering Company Name : Roger Moore International On Company Name Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //input[@name='Company']]<br></span>
+                <span class="reporter-method-output">Entering Password : RogerSSb On Password Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //input[@name='Password']]<br></span>
+                <span class="reporter-method-output">Confirming Password : RogerSSb On Confirm Password Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //input[@name='ConfirmPassword']]<br></span>
+                <span class="reporter-method-output">Clicking on Register Button  : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //input[@name='register-button']]<br></span>
+                <span class="reporter-method-output">Getting Registration Confirmation Text[[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //div[@class='result']]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserFailedLoginWithWrongDetails</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on Login Link : [[ChromeDriver: chrome on WINDOWS (e6bfae2452611ef93f1aa53c9ee30518)] -> link text: Log in]<br></span>
+                <span class="reporter-method-output">Entering Email Id : Roger123@gmail.com On Email Field [[ChromeDriver: chrome on WINDOWS (e6bfae2452611ef93f1aa53c9ee30518)] -> id: Email]<br></span>
+                <span class="reporter-method-output">Entering Password : Roger197777 On Password Field [[ChromeDriver: chrome on WINDOWS (e6bfae2452611ef93f1aa53c9ee30518)] -> xpath: //input[@name='Password']]<br></span>
+                <span class="reporter-method-output"> Clicking on Login Button : [[ChromeDriver: chrome on WINDOWS (e6bfae2452611ef93f1aa53c9ee30518)] -> xpath: //input[@class='button-1 login-button']]<br></span>
+                <span class="reporter-method-output">Getting Welcome Store Text[[ChromeDriver: chrome on WINDOWS (e6bfae2452611ef93f1aa53c9ee30518)] -> xpath: //div[@class='topic-block-title']//h2]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserFailedTestToNavigateToDesktopPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on Computer Link : [[ChromeDriver: chrome on WINDOWS (c962a8c4ce88e87fe2116664143f8633)] -> xpath: //ul[@class='top-menu notmobile']//a[contains(text(),'Computers')]]<br></span>
+                <span class="reporter-method-output">Clicking on Desktop Link : [[ChromeDriver: chrome on WINDOWS (c962a8c4ce88e87fe2116664143f8633)] -> xpath: //h2[@class='title']//a[contains(text(),'Desktops')]]<br></span>
+                <span class="reporter-method-output">Getting Desktop Text : [[ChromeDriver: chrome on WINDOWS (c962a8c4ce88e87fe2116664143f8633)] -> xpath: /html/body/div[6]/div[3]/div[2]/div[2]/div/div[1]/h1]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demo.nopcommerce.testsuite.ComputerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">14122 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserAbleToNavigateToComputersPage</span>
+                <span class="method-start">14223 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16639 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">18280 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">36901 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsAbleToNavigateToDesktopPageViaComputersPage</span>
+                <span class="method-start">36943 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">92280 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">93210 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">107693 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserFailedTestToNavigateToDesktopPage</span>
+                <span class="method-start">107709 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">162088 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demo.nopcommerce.testsuite.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">163212 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">176271 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsAbleToNavigatetoLoginPage</span>
+                <span class="method-start">176426 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">178105 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">179399 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">191841 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsAbleToLoginSuccessfully</span>
+                <span class="method-start">191859 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">246603 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">247873 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">262994 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserFailedLoginWithWrongDetails</span>
+                <span class="method-start">263007 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">267024 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">268298 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">292202 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsNotAbleToLoginWithInvalidCredentials</span>
+                <span class="method-start">292215 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">296046 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demo.nopcommerce.testsuite.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">297466 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpEmail</span>
+                <span class="method-start">317384 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThatUserIsAbleToNavigateToRegisterPage</span>
+                <span class="method-start">317398 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">319049 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">320379 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpEmail</span>
+                <span class="method-start">338669 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThatNewUserIsAbleToRegisterSuccessfully</span>
+                <span class="method-start">338680 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">428151 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">429828 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpEmail</span>
+                <span class="method-start">444870 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThatNewUserFailedTestToRegister</span>
+                <span class="method-start">444883 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">504569 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">506313 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpEmail</span>
+                <span class="method-start">520308 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserisNotBeAbleToRegisterWithInvalidCredentials</span>
+                <span class="method-start">520353 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">526644 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="com.demo.nopcommerce.testsuite.LoginTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+          <include name="verifyUserFailedLoginWithWrongDetails"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.demo.nopcommerce.testsuite.LoginTest -->
+      <class name="com.demo.nopcommerce.testsuite.ComputerTest">
+        <methods>
+          <include name="setUpMethod"/>
+          <include name="verifyUserFailedTestToNavigateToDesktopPage"/>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.demo.nopcommerce.testsuite.ComputerTest -->
+      <class name="com.demo.nopcommerce.testsuite.RegistrationTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+          <include name="verifyThatNewUserFailedTestToRegister"/>
+          <include name="setUpEmail"/>
+        </methods>
+      </class> <!-- com.demo.nopcommerce.testsuite.RegistrationTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

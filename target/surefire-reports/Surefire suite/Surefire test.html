@@ -1,0 +1,407 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 22 12:14:49 BST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>527 seconds (527604 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.demo.nopcommerce.testsuite.RegistrationTest.verifyThatNewUserFailedTestToRegister()'><b>verifyThatNewUserFailedTestToRegister</b><br>Test class: com.demo.nopcommerce.testsuite.RegistrationTest<br/>
+<a href="#Output-1857562888" onClick='toggleBox("Output-1857562888", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1857562888" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1857562888">
+Clicking on Register Link : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> link text: Register]<br><br/>
+Clicking on Male Gender Radio Button  : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> id: gender-male]<br><br/>
+Entering First Name : Roger On First Name Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //input[@name='FirstName']]<br><br/>
+Entering Last Name : Moore On Last Name Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //input[@name='LastName']]<br><br/>
+Selecting Day of Birth : 1 On Day of Birth Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //select[@name='DateOfBirthDay']]<br><br/>
+Selecting Month of Birth : January On Month of Birth Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //select[@name='DateOfBirthMonth']]<br><br/>
+Selecting Year of Birth : 1980 On Year of Birth Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //select[@name='DateOfBirthYear']]<br><br/>
+Entering Email ID : Roger0d3J@gmail.com On Email Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //input[@name='Email']]<br><br/>
+Entering Company Name : Roger Moore International On Company Name Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //input[@name='Company']]<br><br/>
+Entering Password : RogerSSb On Password Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //input[@name='Password']]<br><br/>
+Confirming Password : RogerSSb On Confirm Password Field : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //input[@name='ConfirmPassword']]<br><br/>
+Clicking on Register Button  : [[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //input[@name='register-button']]<br><br/>
+Getting Registration Confirmation Text[[ChromeDriver: chrome on WINDOWS (054fb0066d5eb766d9070b798ea537cd)] -> xpath: //div[@class='result']]<br><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [Your registration] but found [Your registration completed]
+	at com.demo.nopcommerce.testsuite.RegistrationTest.verifyThatNewUserFailedTestToRegister(RegistrationTest.java:103)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1857562888", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1857562888'><pre>java.lang.AssertionError: expected [Your registration] but found [Your registration completed]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.demo.nopcommerce.testsuite.RegistrationTest.verifyThatNewUserFailedTestToRegister(RegistrationTest.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>59</td>
+<td>com.demo.nopcommerce.testsuite.RegistrationTest@34cd072c</td></tr>
+<tr>
+<td title='com.demo.nopcommerce.testsuite.LoginTest.verifyUserFailedLoginWithWrongDetails()'><b>verifyUserFailedLoginWithWrongDetails</b><br>Test class: com.demo.nopcommerce.testsuite.LoginTest<br/>
+<a href="#Output-749443480" onClick='toggleBox("Output-749443480", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-749443480" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-749443480">
+Clicking on Login Link : [[ChromeDriver: chrome on WINDOWS (e6bfae2452611ef93f1aa53c9ee30518)] -> link text: Log in]<br><br/>
+Entering Email Id : Roger123@gmail.com On Email Field [[ChromeDriver: chrome on WINDOWS (e6bfae2452611ef93f1aa53c9ee30518)] -> id: Email]<br><br/>
+Entering Password : Roger197777 On Password Field [[ChromeDriver: chrome on WINDOWS (e6bfae2452611ef93f1aa53c9ee30518)] -> xpath: //input[@name='Password']]<br><br/>
+ Clicking on Login Button : [[ChromeDriver: chrome on WINDOWS (e6bfae2452611ef93f1aa53c9ee30518)] -> xpath: //input[@class='button-1 login-button']]<br><br/>
+Getting Welcome Store Text[[ChromeDriver: chrome on WINDOWS (e6bfae2452611ef93f1aa53c9ee30518)] -> xpath: //div[@class='topic-block-title']//h2]<br><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [Wrong email] but found [About login / registration]
+	at com.demo.nopcommerce.testsuite.LoginTest.verifyUserFailedLoginWithWrongDetails(LoginTest.java:78)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace749443480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace749443480'><pre>java.lang.AssertionError: expected [Wrong email] but found [About login / registration]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.demo.nopcommerce.testsuite.LoginTest.verifyUserFailedLoginWithWrongDetails(LoginTest.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>4</td>
+<td>com.demo.nopcommerce.testsuite.LoginTest@11438d26</td></tr>
+<tr>
+<td title='com.demo.nopcommerce.testsuite.ComputerTest.verifyUserFailedTestToNavigateToDesktopPage()'><b>verifyUserFailedTestToNavigateToDesktopPage</b><br>Test class: com.demo.nopcommerce.testsuite.ComputerTest<br/>
+<a href="#Output-443290224" onClick='toggleBox("Output-443290224", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-443290224" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-443290224">
+Clicking on Computer Link : [[ChromeDriver: chrome on WINDOWS (c962a8c4ce88e87fe2116664143f8633)] -> xpath: //ul[@class='top-menu notmobile']//a[contains(text(),'Computers')]]<br><br/>
+Clicking on Desktop Link : [[ChromeDriver: chrome on WINDOWS (c962a8c4ce88e87fe2116664143f8633)] -> xpath: //h2[@class='title']//a[contains(text(),'Desktops')]]<br><br/>
+Getting Desktop Text : [[ChromeDriver: chrome on WINDOWS (c962a8c4ce88e87fe2116664143f8633)] -> xpath: /html/body/div[6]/div[3]/div[2]/div[2]/div/div[1]/h1]<br><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Desk] but found [Desktops]
+	at com.demo.nopcommerce.testsuite.ComputerTest.verifyUserFailedTestToNavigateToDesktopPage(ComputerTest.java:61)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace443290224", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace443290224'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Desk] but found [Desktops]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.demo.nopcommerce.testsuite.ComputerTest.verifyUserFailedTestToNavigateToDesktopPage(ComputerTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>54</td>
+<td>com.demo.nopcommerce.testsuite.ComputerTest@458c1321</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.demo.nopcommerce.testsuite.RegistrationTest.verifyThatNewUserIsAbleToRegisterSuccessfully()'><b>verifyThatNewUserIsAbleToRegisterSuccessfully</b><br>Test class: com.demo.nopcommerce.testsuite.RegistrationTest<br/>
+<a href="#Output-1178777373" onClick='toggleBox("Output-1178777373", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1178777373" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1178777373">
+Clicking on Register Link : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> link text: Register]<br><br/>
+Clicking on Male Gender Radio Button  : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> id: gender-male]<br><br/>
+Entering First Name : Roger On First Name Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //input[@name='FirstName']]<br><br/>
+Entering Last Name : Moore On Last Name Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //input[@name='LastName']]<br><br/>
+Selecting Day of Birth : 1 On Day of Birth Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //select[@name='DateOfBirthDay']]<br><br/>
+Selecting Month of Birth : January On Month of Birth Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //select[@name='DateOfBirthMonth']]<br><br/>
+Selecting Year of Birth : 1980 On Year of Birth Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //select[@name='DateOfBirthYear']]<br><br/>
+Entering Email ID : RogerlEcl@gmail.com On Email Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //input[@name='Email']]<br><br/>
+Entering Company Name : Roger Moore International On Company Name Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //input[@name='Company']]<br><br/>
+Entering Password : Roger4R4 On Password Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //input[@name='Password']]<br><br/>
+Confirming Password : Roger4R4 On Confirm Password Field : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //input[@name='ConfirmPassword']]<br><br/>
+Clicking on Register Button  : [[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //input[@name='register-button']]<br><br/>
+Getting Registration Confirmation Text[[ChromeDriver: chrome on WINDOWS (4bc2ba91f84cba75419db56b5042db2e)] -> xpath: //div[@class='result']]<br><br/>
+</div>
+</td>
+<td></td>
+<td>89</td>
+<td>com.demo.nopcommerce.testsuite.RegistrationTest@34cd072c</td></tr>
+<tr>
+<td title='com.demo.nopcommerce.testsuite.RegistrationTest.verifyThatUserIsAbleToNavigateToRegisterPage()'><b>verifyThatUserIsAbleToNavigateToRegisterPage</b><br>Test class: com.demo.nopcommerce.testsuite.RegistrationTest<br/>
+<a href="#Output-818785904" onClick='toggleBox("Output-818785904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-818785904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-818785904">
+Clicking on Register Link : [[ChromeDriver: chrome on WINDOWS (ff83f14f2d4d00ac1ec51ee273d8b42d)] -> link text: Register]<br><br/>
+Verifying Register Text : [[ChromeDriver: chrome on WINDOWS (ff83f14f2d4d00ac1ec51ee273d8b42d)] -> xpath: //h1[contains(text(),'Register')]]<br><br/>
+Getting Register Text : [[ChromeDriver: chrome on WINDOWS (ff83f14f2d4d00ac1ec51ee273d8b42d)] -> xpath: //h1[contains(text(),'Register')]]<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.demo.nopcommerce.testsuite.RegistrationTest@34cd072c</td></tr>
+<tr>
+<td title='com.demo.nopcommerce.testsuite.ComputerTest.verifyUserAbleToNavigateToComputersPage()'><b>verifyUserAbleToNavigateToComputersPage</b><br>Test class: com.demo.nopcommerce.testsuite.ComputerTest<br/>
+<a href="#Output-1309335839" onClick='toggleBox("Output-1309335839", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1309335839" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1309335839">
+Clicking on Computer Link : [[ChromeDriver: chrome on WINDOWS (9c1ab20c3455bcd5b572865538faccc1)] -> xpath: //ul[@class='top-menu notmobile']//a[contains(text(),'Computers')]]<br><br/>
+Getting Computer Text : Computers [[ChromeDriver: chrome on WINDOWS (9c1ab20c3455bcd5b572865538faccc1)] -> xpath: //div[@class='page-title']//h1]<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.demo.nopcommerce.testsuite.ComputerTest@458c1321</td></tr>
+<tr>
+<td title='com.demo.nopcommerce.testsuite.LoginTest.verifyUserIsAbleToLoginSuccessfully()'><b>verifyUserIsAbleToLoginSuccessfully</b><br>Test class: com.demo.nopcommerce.testsuite.LoginTest<br/>
+<a href="#Output-265824587" onClick='toggleBox("Output-265824587", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-265824587" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-265824587">
+Clicking on Login Link : [[ChromeDriver: chrome on WINDOWS (ae5c580a6281c72d0a4882dd8aa4be5e)] -> link text: Log in]<br><br/>
+Entering Email Id : Roger123@gmail.com On Email Field [[ChromeDriver: chrome on WINDOWS (ae5c580a6281c72d0a4882dd8aa4be5e)] -> id: Email]<br><br/>
+Entering Password : Roger1980 On Password Field [[ChromeDriver: chrome on WINDOWS (ae5c580a6281c72d0a4882dd8aa4be5e)] -> xpath: //input[@name='Password']]<br><br/>
+ Clicking on Login Button : [[ChromeDriver: chrome on WINDOWS (ae5c580a6281c72d0a4882dd8aa4be5e)] -> xpath: //input[@class='button-1 login-button']]<br><br/>
+Getting Welcome Store Text[[ChromeDriver: chrome on WINDOWS (ae5c580a6281c72d0a4882dd8aa4be5e)] -> xpath: //div[@class='topic-block-title']//h2]<br><br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
+<td>com.demo.nopcommerce.testsuite.LoginTest@11438d26</td></tr>
+<tr>
+<td title='com.demo.nopcommerce.testsuite.ComputerTest.verifyUserIsAbleToNavigateToDesktopPageViaComputersPage()'><b>verifyUserIsAbleToNavigateToDesktopPageViaComputersPage</b><br>Test class: com.demo.nopcommerce.testsuite.ComputerTest<br/>
+<a href="#Output-2095788421" onClick='toggleBox("Output-2095788421", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2095788421" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2095788421">
+Clicking on Computer Link : [[ChromeDriver: chrome on WINDOWS (0c117c852ad12ef3aeb2b2b6c138bebc)] -> xpath: //ul[@class='top-menu notmobile']//a[contains(text(),'Computers')]]<br><br/>
+Clicking on Desktop Link : [[ChromeDriver: chrome on WINDOWS (0c117c852ad12ef3aeb2b2b6c138bebc)] -> xpath: //h2[@class='title']//a[contains(text(),'Desktops')]]<br><br/>
+Getting Desktop Text : [[ChromeDriver: chrome on WINDOWS (0c117c852ad12ef3aeb2b2b6c138bebc)] -> xpath: /html/body/div[6]/div[3]/div[2]/div[2]/div/div[1]/h1]<br><br/>
+</div>
+</td>
+<td></td>
+<td>55</td>
+<td>com.demo.nopcommerce.testsuite.ComputerTest@458c1321</td></tr>
+<tr>
+<td title='com.demo.nopcommerce.testsuite.LoginTest.verifyUserIsAbleToNavigatetoLoginPage()'><b>verifyUserIsAbleToNavigatetoLoginPage</b><br>Test class: com.demo.nopcommerce.testsuite.LoginTest<br/>
+<a href="#Output-1424108509" onClick='toggleBox("Output-1424108509", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1424108509" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1424108509">
+Clicking on Login Link : [[ChromeDriver: chrome on WINDOWS (5f6fa64bf6505d37e5d570889457342a)] -> link text: Log in]<br><br/>
+ Getting Login Welcome Text Message : [[ChromeDriver: chrome on WINDOWS (5f6fa64bf6505d37e5d570889457342a)] -> xpath: //h1[contains(text(),'Welcome, Please Sign In!')]]<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.demo.nopcommerce.testsuite.LoginTest@11438d26</td></tr>
+<tr>
+<td title='com.demo.nopcommerce.testsuite.LoginTest.verifyUserIsNotAbleToLoginWithInvalidCredentials()'><b>verifyUserIsNotAbleToLoginWithInvalidCredentials</b><br>Test class: com.demo.nopcommerce.testsuite.LoginTest<br/>
+<a href="#Output-1725054538" onClick='toggleBox("Output-1725054538", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1725054538" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1725054538">
+Clicking on Login Link : [[ChromeDriver: chrome on WINDOWS (66f2ba0eb1346949e2f64ad59b9cc556)] -> link text: Log in]<br><br/>
+Entering Email Id : Roger123@gmail.com On Email Field [[ChromeDriver: chrome on WINDOWS (66f2ba0eb1346949e2f64ad59b9cc556)] -> id: Email]<br><br/>
+Entering A Wrong Password : Roger197777 On Password Field [[ChromeDriver: chrome on WINDOWS (66f2ba0eb1346949e2f64ad59b9cc556)] -> xpath: //input[@name='Password']]<br><br/>
+ Clicking on Login Button : [[ChromeDriver: chrome on WINDOWS (66f2ba0eb1346949e2f64ad59b9cc556)] -> xpath: //input[@class='button-1 login-button']]<br><br/>
+ Getting Error Message Text : [[ChromeDriver: chrome on WINDOWS (66f2ba0eb1346949e2f64ad59b9cc556)] -> xpath: //div[@class='message-error validation-summary-errors']]<br><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.demo.nopcommerce.testsuite.LoginTest@11438d26</td></tr>
+<tr>
+<td title='com.demo.nopcommerce.testsuite.RegistrationTest.verifyUserisNotBeAbleToRegisterWithInvalidCredentials()'><b>verifyUserisNotBeAbleToRegisterWithInvalidCredentials</b><br>Test class: com.demo.nopcommerce.testsuite.RegistrationTest<br/>
+<a href="#Output-1551263930" onClick='toggleBox("Output-1551263930", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1551263930" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1551263930">
+Clicking on Register Link : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> link text: Register]<br><br/>
+Clicking on Male Gender Radio Button  : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> id: gender-male]<br><br/>
+Entering First Name : Roger On First Name Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //input[@name='FirstName']]<br><br/>
+Entering Last Name : Moore On Last Name Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //input[@name='LastName']]<br><br/>
+Selecting Day of Birth : 1 On Day of Birth Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //select[@name='DateOfBirthDay']]<br><br/>
+Selecting Month of Birth : January On Month of Birth Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //select[@name='DateOfBirthMonth']]<br><br/>
+Selecting Year of Birth : 1980 On Year of Birth Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //select[@name='DateOfBirthYear']]<br><br/>
+Entering Email ID : RogerCdfe@gmail.com On Email Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //input[@name='Email']]<br><br/>
+Entering Company Name : Roger Moore International On Company Name Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //input[@name='Company']]<br><br/>
+Entering Password : RogerglQ On Password Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //input[@name='Password']]<br><br/>
+Providing Wrong Confirm Password : Roger77777 On Confirm Password Field : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //input[@name='ConfirmPassword']]<br><br/>
+Clicking on Register Button  : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //input[@name='register-button']]<br><br/>
+Verifying Registration Error Message : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //span[@id='ConfirmPassword-error']]<br><br/>
+Getting Registration Error Message : [[ChromeDriver: chrome on WINDOWS (b711b6a4c2418f773000ec9a985a90c8)] -> xpath: //span[@id='ConfirmPassword-error']]<br><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.demo.nopcommerce.testsuite.RegistrationTest@34cd072c</td></tr>
+</table><p>
+</body>
+</html>

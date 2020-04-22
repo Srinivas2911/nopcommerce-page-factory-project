@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NoP Commerce Test" verbose="1">
+    <listeners>
+        <listener class-name="com.demo.nopcommerce.listener.Listeners"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="Registration Test">
+        <classes>
+            <class name="com.demo.nopcommerce.testsuite.RegistrationTest"/>
+            <class name="com.demo.nopcommerce.testsuite.RegistrationTestWithDataProvider"/>
+            <class name="com.demo.nopcommerce.testsuite.RegistrationTestWithExcelData"/>
+        </classes>
+    </test>
+    <test name="Login Test">
+        <classes>
+            <class name="com.demo.nopcommerce.testsuite.LoginTest"/>
+            <class name="com.demo.nopcommerce.testsuite.LoginTestWithDataProvider"/>
+            <class name="com.demo.nopcommerce.testsuite.LoginTestWithExcelData"/>
+        </classes>
+    </test>
+    <test name="Computer Test">
+        <classes>
+            <class name="com.demo.nopcommerce.testsuite.ComputerTest"/>
+        </classes>
+    </test>
+</suite>
